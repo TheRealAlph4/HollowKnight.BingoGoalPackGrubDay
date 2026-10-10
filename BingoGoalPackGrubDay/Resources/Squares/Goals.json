@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Have 8 Rancid Eggs",
+    "condition": {
+      "type": "Int",
+      "variableName": "rancidEggs",
+      "expectedQuantity": 8,
+      "state": "Current"
+    },
+    "canUnmark": true
+  },
+  {
+    "name": "Save 5 grubs",
+    "condition": {
+      "type": "Int",
+      "variableName": "grubsCollected",
+      "expectedQuantity": 5,
+      "state": "Current"
+    }
+  },
+  {
+    "name": "Save 10 grubs",
+    "condition": {
+      "type": "Int",
+      "variableName": "grubsCollected",
+      "expectedQuantity": 10,
+      "state": "Current"
+    }
+  },
+  {
+    "name": "Save 25 grubs",
+    "condition": {
+      "type": "Int",
+      "variableName": "grubsCollected",
+      "expectedQuantity": 25,
+      "state": "Current"
+    }
+  },
+  {
+    "name": "Save the 2 grubs in Kedge",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "grubSaved_single_Deepnest_East_14",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "grubSaved_single_Deepnest_East_11",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Save 1 grub in each area (14)",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_CROSSROADS",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_DEEPNEST",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_FOG_CANYON",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_WASTES",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_CLIFFS",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_GREEN_PATH",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_RESTING_GROUNDS",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_ROYAL_GARDENS",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_ABYSS",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_HIVE",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_PEAK",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Int",
+          "variableName": "grubsSaved_WATERWAYS",
+          "expectedQuantity": 1,
+          "state": "Current"
+        },
+        {
+          "type": "Some",
+          "amount": "1",
+          "conditions": [
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Ruins1_05",
+              "expectedValue": true
+            },
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Ruins2_03",
+              "expectedValue": true
+            },
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Ruins_House_01",
+              "expectedValue": true
+            },
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Ruins2_07",
+              "expectedValue": true
+            },
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Ruins1_32",
+              "expectedValue": true
+            }
+          ]
+        },
+        {
+          "type": "Some",
+          "amount": "1",
+          "conditions": [
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Deepnest_East_14",
+              "expectedValue": true
+            },
+            {
+              "type": "Bool",
+              "variableName": "grubSaved_single_Deepnest_East_11",
+              "expectedValue": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
